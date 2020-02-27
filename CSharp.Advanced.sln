@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc", "Mvc\Mvc.csproj", "{2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallerProgramming", "ParallerProgramming\ParallerProgramming.csproj", "{8A790EBD-617E-47CC-AFC0-5F7D2B6113A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{86123E07-1992-4692-AD59-AF1041903FE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{2B2E3FF7-9B19-4E22-A386-94EC27B4CC70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{8A790EBD-617E-47CC-AFC0-5F7D2B6113A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A790EBD-617E-47CC-AFC0-5F7D2B6113A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A790EBD-617E-47CC-AFC0-5F7D2B6113A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86123E07-1992-4692-AD59-AF1041903FE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86123E07-1992-4692-AD59-AF1041903FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86123E07-1992-4692-AD59-AF1041903FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86123E07-1992-4692-AD59-AF1041903FE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B2E3FF7-9B19-4E22-A386-94EC27B4CC70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B2E3FF7-9B19-4E22-A386-94EC27B4CC70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B2E3FF7-9B19-4E22-A386-94EC27B4CC70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B2E3FF7-9B19-4E22-A386-94EC27B4CC70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
