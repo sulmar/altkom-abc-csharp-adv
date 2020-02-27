@@ -8,6 +8,7 @@ namespace DesignPatterns
         static void Main(string[] args)
         {
             SingletonPattern.Test();
+            FactoryMethod.Test();
         }
     }
 }
