@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "Vehicles.Api";
+
+package vehicles;
+
+service VehiclesService {
+	rpc AddMeasure (AddMeasureRequest) returns (AddMeasureResponse);
+}
+
+message AddMeasureRequest { 
+	float fuel_level = 1;
+	float speed = 2;
+}
+
+message AddMeasureResponse {
+	bool is_confirmed = 1;
+}
+

@@ -3,15 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "ExtensionMethods\ExtensionMethods.csproj", "{BB4F2068-C710-4C80-96D7-720A470A3F01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionMethods", "ExtensionMethods\ExtensionMethods.csproj", "{BB4F2068-C710-4C80-96D7-720A470A3F01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc", "Mvc\Mvc.csproj", "{2989D5D2-8F74-4E71-8BE0-8B1B608695A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mvc", "Mvc\Mvc.csproj", "{2989D5D2-8F74-4E71-8BE0-8B1B608695A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallerProgramming", "ParallerProgramming\ParallerProgramming.csproj", "{8A790EBD-617E-47CC-AFC0-5F7D2B6113A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParallerProgramming", "ParallerProgramming\ParallerProgramming.csproj", "{8A790EBD-617E-47CC-AFC0-5F7D2B6113A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{86123E07-1992-4692-AD59-AF1041903FE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegates", "Delegates\Delegates.csproj", "{86123E07-1992-4692-AD59-AF1041903FE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{2B2E3FF7-9B19-4E22-A386-94EC27B4CC70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{2B2E3FF7-9B19-4E22-A386-94EC27B4CC70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vehicles", "Vehicles", "{55FA5A7E-6802-4072-9BEE-498FB5DDD109}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicles.Domain", "Vehicles\Vehicles.Domain\Vehicles.Domain.csproj", "{A85F7063-7F0F-4231-A430-16021EE05801}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicles.GrpcService", "Vehicles\Vehicles.GrpcService\Vehicles.GrpcService.csproj", "{0711AF3B-5D04-47FE-90D5-97C995FB52A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicles.SenderConsoleClient", "Vehicles\Vehicles.SenderConsoleClient\Vehicles.SenderConsoleClient.csproj", "{3BAFAD41-C4AB-4BC5-BECB-5727DA80FBF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +47,26 @@ Global
 		{2B2E3FF7-9B19-4E22-A386-94EC27B4CC70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B2E3FF7-9B19-4E22-A386-94EC27B4CC70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B2E3FF7-9B19-4E22-A386-94EC27B4CC70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A85F7063-7F0F-4231-A430-16021EE05801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A85F7063-7F0F-4231-A430-16021EE05801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A85F7063-7F0F-4231-A430-16021EE05801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A85F7063-7F0F-4231-A430-16021EE05801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0711AF3B-5D04-47FE-90D5-97C995FB52A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0711AF3B-5D04-47FE-90D5-97C995FB52A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0711AF3B-5D04-47FE-90D5-97C995FB52A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0711AF3B-5D04-47FE-90D5-97C995FB52A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BAFAD41-C4AB-4BC5-BECB-5727DA80FBF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BAFAD41-C4AB-4BC5-BECB-5727DA80FBF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BAFAD41-C4AB-4BC5-BECB-5727DA80FBF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BAFAD41-C4AB-4BC5-BECB-5727DA80FBF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A85F7063-7F0F-4231-A430-16021EE05801} = {55FA5A7E-6802-4072-9BEE-498FB5DDD109}
+		{0711AF3B-5D04-47FE-90D5-97C995FB52A7} = {55FA5A7E-6802-4072-9BEE-498FB5DDD109}
+		{3BAFAD41-C4AB-4BC5-BECB-5727DA80FBF9} = {55FA5A7E-6802-4072-9BEE-498FB5DDD109}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {81175111-3004-433D-9C56-843882C58A5D}

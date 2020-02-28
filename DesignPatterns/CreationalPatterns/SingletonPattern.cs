@@ -27,7 +27,7 @@ namespace DesignPatterns.CreationalPatterns
         //}
 
         public static void After()
-        {
+         {
             
             Logger logger1 = Logger.Instance;
 
@@ -35,6 +35,9 @@ namespace DesignPatterns.CreationalPatterns
 
             Logger logger2 = Logger.Instance;
             logger2.Log("Hello");
+
+            ISender sender1 = Singleton<Sender>.Instance;
+            ISender sender2 = Singleton<Sender>.Instance;
         }
     }
 
@@ -72,6 +75,29 @@ namespace DesignPatterns.CreationalPatterns
         {
             System.IO.File.WriteAllText("log.txt", message);
         }
+    }
+
+    public interface ISender
+    {
+        void Send(string message);
+    }
+    public class Sender : ISender
+    { 
+        public void Send(string message)
+        {
+            Console.WriteLine($"Send {message}");
+        }
+    }
+
+    public sealed class Singleton<T>
+        where T : new()
+    {
+        private static readonly Lazy<T> lazy = new Lazy<T>(() => new T());
+        public static T Instance => lazy.Value;
+        private Singleton()
+        {
+        }
+
     }
 
 

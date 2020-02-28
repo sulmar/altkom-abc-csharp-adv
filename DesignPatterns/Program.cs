@@ -1,5 +1,7 @@
 ﻿using DesignPatterns.CreationalPatterns;
+using DesignPatterns.BehavioralPatterns;
 using System;
+
 
 namespace DesignPatterns
 {
@@ -7,8 +9,9 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            SingletonPattern.Test();
-            FactoryMethod.Test();
+            //SingletonPattern.Test();
+            //FactoryMethod.Test();
+            TemplateMethod.Test();
         }
     }
 }
